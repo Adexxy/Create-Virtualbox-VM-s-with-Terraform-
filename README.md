@@ -51,7 +51,7 @@ Once you have created the Ansible playbook, you can deploy it to the VM using th
 
 ```sh
 provisioner "local-exec" {
-    command     = "ansible-playbook -i inventory.ini -u ${var.user} -e 'variable=value' ${var.playbook} -b -vvv --private-key= ${var.}"
+    command     = "ansible-playbook -i inventory.ini -u ${var.user} -e 'variable=value' ${var.playbook} -b -vvv --private-key= ${var.vagrant_ssh_key}"
     working_dir = path.module
 ```
 
