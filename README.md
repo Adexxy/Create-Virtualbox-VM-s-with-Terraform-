@@ -9,14 +9,14 @@ To use this repository, you will need to install Terraform and VirtualBox.
 Once you have installed Terraform and VirtualBox, you can clone this repository:
 
 ```sh
-git clone https://github.com/user/repo.git
+git clone https://github.com/Adexxy/Create-Virtualbox-VM-s-with-Terraform-.git
 
 ```
 
 Navigate to the repository directory:
 
 ```sh
-cd repo
+cd Create-Virtualbox-VM-s-with-Terraform-.git
 ```
 
 Initialize the Terraform backend:
