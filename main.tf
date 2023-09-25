@@ -92,7 +92,7 @@ resource "null_resource" "run_ansible" {
   }
 
   provisioner "local-exec" {
-    command     = "ansible-playbook -i /home/marvel/Documents/DevOps/project-terraform/terraform-virtualbox-kubespray/kubespray/inventory.ini -u ${var.user} -e 'variable=value' ${var.playbook} -b -vvv --private-key=/home/marvel/.vagrant.d/insecure_private_key"
+    command     = "ansible-playbook -i inventory.ini -u ${var.user} -e 'variable=value' ${var.playbook} -b -vvv --private-key= ${var.vagrant_ssh_key}"
     working_dir = path.module
 
     connection {

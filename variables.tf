@@ -15,7 +15,7 @@ variable "ssh_key_private" {
 
 variable "image_location" {
   description = "virtualbox image location - can be downloaded or remote location"
-  default = "/bionic-server-cloudimg-amd64-vagrant.box"
+  default = "~/bionic-server-cloudimg-amd64-vagrant.box"
 }
 
 variable "vagrant_ssh_key" {
